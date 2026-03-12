@@ -1,0 +1,10 @@
+cd sort
+cat > answers.txt << 'EOF'
+sort1 uses: bubble sort
+How do you know? sort1 runs significantly faster on sorted input (sorted50000.txt) compared to random or reversed input. This behavior is characteristic of bubble sort, which has an O(n) best case when the list is already sorted (no swaps needed), but degrades to O(n²) on random or reversed data.
+
+sort2 uses: merge sort
+How do you know? sort2 runs consistently fast across all input types (sorted, random, and reversed), even with large inputs like 50000 elements. This matches merge sort's O(n log n) time complexity in all cases — best, average, and worst — regardless of the initial order of the data.
+
+sort3 uses: selection sort
+How do you know? sort3 takes a similar (and slow) amount of time on all input types — sorted, random, and reversed. This matches selection sort's O(n²) time complexity in all cases, because selection sort always scans the entire remaining unsorted portion of the list to find the minimum element, regardless of whether the data is already sorted or not.
