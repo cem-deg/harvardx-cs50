@@ -1,0 +1,11 @@
+1. Audio Aura Characterization:
+Based on the top 100 songs, this listener's audio aura can be determined by calculating the average energy, valence, and danceability. These metrics would reveal whether the listener prefers upbeat, happy, and danceable songs, or more mellow and calm music.
+
+2. Limitations and Better Approaches:
+- Limitation: Simple averaging treats all songs equally, regardless of how many times they were actually played.
+- Limitation: It doesn't capture mood changes over time throughout the year.
+
+Better ways:
+- Weight the averages by play count instead of treating all songs equally.
+- Identify multiple moods by grouping songs into clusters rather than using just one average.
+- Focus on top 10 or top 50 songs instead of all 100 to get more accurate representation.
